@@ -18,13 +18,130 @@
 <link rel="canonical" href="https://yourdomain.com"/>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"LocalBusiness",
-  "name":"GrassCut Pro Malaysia",
-  "description":"Professional grass cutting and lawn mowing service in Malaysia. Serving Kuala Lumpur, Selangor and surrounding areas.",
-  "serviceType":"Grass Cutting / Lawn Mowing",
-  "areaServed":{"@type":"Country","name":"Malaysia"},
-  "contactPoint":{"@type":"ContactPoint","contactType":"Sales","availableLanguage":["English","Malay"]}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LandscapingBusiness",
+      "@id": "https://yourdomain.com/#business",
+      "name": "GrassCut Pro Malaysia",
+      "url": "https://yourdomain.com",
+      "description": "Professional grass cutting, lawn mowing and land maintenance services in Malaysia. Serving Kuala Lumpur, Selangor and surrounding areas.",
+      "telephone": "+60123456789",
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Selangor"
+        },
+        {
+          "@type": "City",
+          "name": "Kuala Lumpur"
+        },
+        {
+          "@type": "Country",
+          "name": "Malaysia"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+60123456789",
+        "availableLanguage": [
+          "English",
+          "Malay"
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://yourdomain.com/#service",
+      "name": "Grass Cutting Service Malaysia",
+      "serviceType": "Grass Cutting and Lawn Mowing",
+      "description": "Professional grass cutting service for residential, commercial, industrial and vacant land properties. Get an instant quotation via WhatsApp.",
+      "provider": {
+        "@id": "https://yourdomain.com/#business"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://yourdomain.com",
+        "availableLanguage": [
+          "English",
+          "Malay"
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/#webpage",
+      "url": "https://yourdomain.com",
+      "name": "Grass Cutting Service Malaysia | Instant WhatsApp Quote | GrassCut Pro",
+      "description": "Get an instant grass cutting quote in Malaysia. Select your land size and grass condition and receive a quotation via WhatsApp.",
+      "isPartOf": {
+        "@id": "https://yourdomain.com/#website"
+      },
+      "about": {
+        "@id": "https://yourdomain.com/#service"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yourdomain.com/#website",
+      "url": "https://yourdomain.com",
+      "name": "GrassCut Pro Malaysia",
+      "publisher": {
+        "@id": "https://yourdomain.com/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://yourdomain.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does grass cutting cost in Malaysia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost depends on the land size, grass height and site condition. Select your land size and grass condition to receive an instant quotation via WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide grass cutting services in Kuala Lumpur and Selangor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve Kuala Lumpur, Selangor and surrounding areas, with coverage extending to other parts of Malaysia depending on location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you cut heavily overgrown grass and vacant land?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We handle light, medium, heavy and extreme overgrowth, including vacant land, abandoned lots and jungle-like conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quotation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply select your land size and grass condition on this page and send your details through WhatsApp to receive a quotation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to fill in a form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The quotation process is completed directly through WhatsApp without requiring a contact form."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 <style>
