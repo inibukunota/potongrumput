@@ -29,106 +29,290 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LandscapingBusiness",
-      "@id": "https://yourdomain.com/#business",
-      "name": "GrassCut Pro Malaysia",
-      "url": "https://yourdomain.com",
-      "description": "Professional grass cutting, lawn mowing and land maintenance services in Malaysia. Serving Kuala Lumpur, Selangor and surrounding areas.",
-      "telephone": "+60123456789",
+      "@type": [
+        "LandscapingBusiness",
+        "LocalBusiness"
+      ],
+      "@id": "https://potongrumput.bukunota.my/#business",
+      "name": "Potong Rumput Shah Alam Enterprise",
+      "url": "https://potongrumput.bukunota.my",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pub-f8fbc76f39de45ccbfb99b396fde3334.r2.dev/260607-potong%20rumput%20shah%20alam.png"
+      },
+      "image": "https://pub-f8fbc76f39de45ccbfb99b396fde3334.r2.dev/260607-potong%20rumput%20shah%20alam.png",
+      "description": "Professional grass cutting, lawn mowing, tree trimming, hedge trimming, land clearing and lawn maintenance services in Shah Alam, Selangor and Kuala Lumpur, Malaysia.",
+      "telephone": "+60129081247",
+      "email": "kami@bukunota.my",
+      "priceRange": "RM150–RM2,000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. J-G-95, Courtyard Plaza Jelutong, 5C, Persiaran Gerbang Utama, Bukit Jelutong",
+        "addressLocality": "Shah Alam",
+        "postalCode": "40150",
+        "addressRegion": "Selangor",
+        "addressCountry": "MY"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 3.1158578533168666,
+        "longitude": 101.52951096070355
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
       "areaServed": [
         {
-          "@type": "State",
-          "name": "Selangor"
+          "@type": "City",
+          "name": "Shah Alam"
         },
         {
           "@type": "City",
           "name": "Kuala Lumpur"
         },
         {
-          "@type": "Country",
-          "name": "Malaysia"
+          "@type": "State",
+          "name": "Selangor"
         }
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "telephone": "+60123456789",
+        "telephone": "+60129081247",
+        "email": "kami@bukunota.my",
+        "availableLanguage": [
+          "English",
+          "Malay"
+        ],
+        "contactOption": "TollFree"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Grass Cutting & Landscaping Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Grass Cutting Service"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "MYR",
+              "minPrice": 150,
+              "maxPrice": 2000
+            }
+          }
+        ]
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "Service",
+      "@id": "https://potongrumput.bukunota.my/#service-grass-cutting",
+      "name": "Grass Cutting Service Malaysia",
+      "serviceType": "Grass Cutting and Lawn Mowing",
+      "description": "Professional grass cutting service for residential, commercial, industrial and vacant land in Shah Alam, Selangor and Kuala Lumpur. Get an instant quotation via WhatsApp.",
+      "provider": {
+        "@id": "https://potongrumput.bukunota.my/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Shah Alam"
+        },
+        {
+          "@type": "City",
+          "name": "Kuala Lumpur"
+        },
+        {
+          "@type": "State",
+          "name": "Selangor"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://potongrumput.bukunota.my",
         "availableLanguage": [
           "English",
           "Malay"
         ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "MYR",
+          "minPrice": 150,
+          "maxPrice": 2000
+        }
       }
     },
     {
       "@type": "Service",
-      "@id": "https://yourdomain.com/#service",
-      "name": "Grass Cutting Service Malaysia",
-      "serviceType": "Grass Cutting and Lawn Mowing",
-      "description": "Professional grass cutting service for residential, commercial, industrial and vacant land properties. Get an instant quotation via WhatsApp.",
+      "@id": "https://potongrumput.bukunota.my/#service-tree-trimming",
+      "name": "Tree Trimming Service Shah Alam",
+      "serviceType": "Tree Trimming",
+      "description": "Professional tree trimming and pruning service in Shah Alam, Selangor and Kuala Lumpur.",
       "provider": {
-        "@id": "https://yourdomain.com/#business"
+        "@id": "https://potongrumput.bukunota.my/#business"
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Malaysia"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Shah Alam"
+        },
+        {
+          "@type": "State",
+          "name": "Selangor"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://potongrumput.bukunota.my/#service-land-clearing",
+      "name": "Land Clearing Service Selangor",
+      "serviceType": "Land Clearing",
+      "description": "Land clearing service for vacant lots, abandoned land and overgrown properties in Selangor and Kuala Lumpur.",
+      "provider": {
+        "@id": "https://potongrumput.bukunota.my/#business"
       },
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": "https://yourdomain.com",
-        "availableLanguage": [
-          "English",
-          "Malay"
-        ]
-      }
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Shah Alam"
+        },
+        {
+          "@type": "State",
+          "name": "Selangor"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://potongrumput.bukunota.my/#service-hedge-trimming",
+      "name": "Hedge Trimming Service Shah Alam",
+      "serviceType": "Hedge Trimming",
+      "description": "Hedge trimming and shaping service for residential and commercial properties in Shah Alam and Selangor.",
+      "provider": {
+        "@id": "https://potongrumput.bukunota.my/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Shah Alam"
+        },
+        {
+          "@type": "State",
+          "name": "Selangor"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://potongrumput.bukunota.my/#service-lawn-maintenance",
+      "name": "Lawn Maintenance Service Selangor",
+      "serviceType": "Lawn Maintenance",
+      "description": "Ongoing lawn maintenance and upkeep for residential, commercial and industrial properties across Shah Alam and Selangor.",
+      "provider": {
+        "@id": "https://potongrumput.bukunota.my/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Shah Alam"
+        },
+        {
+          "@type": "State",
+          "name": "Selangor"
+        }
+      ]
     },
     {
       "@type": "WebPage",
-      "@id": "https://yourdomain.com/#webpage",
-      "url": "https://yourdomain.com",
-      "name": "Grass Cutting Service Malaysia | Instant WhatsApp Quote | GrassCut Pro",
-      "description": "Get an instant grass cutting quote in Malaysia. Select your land size and grass condition and receive a quotation via WhatsApp.",
+      "@id": "https://potongrumput.bukunota.my/#webpage",
+      "url": "https://potongrumput.bukunota.my",
+      "name": "Grass Cutting Service Malaysia | Instant WhatsApp Quote | Potong Rumput Shah Alam",
+      "description": "Get an instant grass cutting quote in Malaysia. Select your land size and grass condition and receive a quotation via WhatsApp within minutes. Serving Shah Alam, KL and Selangor.",
       "isPartOf": {
-        "@id": "https://yourdomain.com/#website"
+        "@id": "https://potongrumput.bukunota.my/#website"
       },
       "about": {
-        "@id": "https://yourdomain.com/#service"
-      }
+        "@id": "https://potongrumput.bukunota.my/#service-grass-cutting"
+      },
+      "inLanguage": [
+        "en-MY",
+        "ms-MY"
+      ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://yourdomain.com/#website",
-      "url": "https://yourdomain.com",
-      "name": "GrassCut Pro Malaysia",
+      "@id": "https://potongrumput.bukunota.my/#website",
+      "url": "https://potongrumput.bukunota.my",
+      "name": "Potong Rumput Shah Alam Enterprise",
       "publisher": {
-        "@id": "https://yourdomain.com/#business"
-      }
+        "@id": "https://potongrumput.bukunota.my/#business"
+      },
+      "inLanguage": [
+        "en-MY",
+        "ms-MY"
+      ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://yourdomain.com/#faq",
+      "@id": "https://potongrumput.bukunota.my/#faq",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Berapa harga potong rumput di Shah Alam dan Selangor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Harga potong rumput bermula dari RM150 hingga RM2,000 bergantung kepada keluasan tanah, ketinggian rumput dan keadaan tapak. Pilih saiz tanah dan keadaan rumput anda untuk mendapatkan sebut harga segera melalui WhatsApp."
+          }
+        },
         {
           "@type": "Question",
           "name": "How much does grass cutting cost in Malaysia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The cost depends on the land size, grass height and site condition. Select your land size and grass condition to receive an instant quotation via WhatsApp."
+            "text": "Grass cutting prices start from RM150 to RM2,000 depending on land size, grass height and site condition. Select your land size and grass condition on this page to receive an instant quotation via WhatsApp."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide grass cutting services in Kuala Lumpur and Selangor?",
+          "name": "Do you provide grass cutting services in Shah Alam, Kuala Lumpur and Selangor?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We serve Kuala Lumpur, Selangor and surrounding areas, with coverage extending to other parts of Malaysia depending on location."
+            "text": "Yes. Potong Rumput Shah Alam Enterprise serves Shah Alam, Kuala Lumpur and all areas across Selangor. Contact us via WhatsApp to confirm coverage for your location."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you cut heavily overgrown grass and vacant land?",
+          "name": "Can you clear heavily overgrown or jungle-like land?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We handle light, medium, heavy and extreme overgrowth, including vacant land, abandoned lots and jungle-like conditions."
+            "text": "Yes. We handle all levels of overgrowth from ankle-height grass to shoulder-height jungle-like conditions, including vacant lots and abandoned land."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer tree trimming, hedge trimming and land clearing services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In addition to grass cutting, we provide tree trimming, hedge trimming, land clearing and ongoing lawn maintenance services in Shah Alam and Selangor."
           }
         },
         {
@@ -136,15 +320,15 @@
           "name": "How do I get a quotation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Simply select your land size and grass condition on this page and send your details through WhatsApp to receive a quotation."
+            "text": "Select your land size and grass condition on this page, then tap the WhatsApp button to send us your details. We will reply with a quotation within minutes. No forms required."
           }
         },
         {
           "@type": "Question",
-          "name": "Do I need to fill in a form?",
+          "name": "Adakah anda beroperasi pada hari Ahad dan cuti umum?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. The quotation process is completed directly through WhatsApp without requiring a contact form."
+            "text": "Ya. Kami beroperasi setiap hari termasuk hari Sabtu, Ahad dan cuti umum. Hubungi kami melalui WhatsApp untuk tempahan."
           }
         }
       ]
